@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Nana/Scenes/StartScene.unity
+    guid: ec79b5cd101d8415996d6b57da67a6d2
+  - enabled: 1
+    path: Assets/Nana/Scenes/SelectLevelScene.unity
+    guid: 2eff24a2e497e4dfcbec151d4e5bfbc9
+  - enabled: 1
+    path: Assets/Nana/Scenes/S_001.unity
+    guid: 982e326ec03a34e2cbd2364710bec9f0
+  - enabled: 1
+    path: Assets/Nana/Scenes/S_002.unity
+    guid: a20a512bf71714629943c2533c66cb7c
   m_configObjects: {}
