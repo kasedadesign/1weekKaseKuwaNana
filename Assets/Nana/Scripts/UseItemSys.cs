@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -11,7 +13,10 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector3 _nowMousePosi; // 現在のマウスのワールド座標
 
     private Vector2 prevPosition;
-    
+
+    //タイムライン
+    [SerializeField] PlayableDirector director;
+
     void Update()
     {
         Vector3 nowmouseposi;
@@ -72,6 +77,8 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 flg = false;
 
                 PlayTimeline(hit.gameObject.name);
+                
+                gameObject.SetActive(false);
             }
         }
         if (flg)
@@ -82,6 +89,7 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     private void PlayTimeline(string itemName)
     {
-        Debug.Log(itemName);
+        director.enabled = true;
+        director.Play();
     }
 }
