@@ -544,7 +544,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 1
 --- !u!114 &-4869479726819195723
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1396,7 +1396,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 1
 --- !u!114 &4430093193394443598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 0
 --- !u!114 &6195978814981220908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 1
 --- !u!114 &6832558590085929052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 1
 --- !u!114 &6835939473179061459
 MonoBehaviour:
   m_ObjectHideFlags: 1

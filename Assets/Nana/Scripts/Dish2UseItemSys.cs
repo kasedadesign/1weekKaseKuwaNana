@@ -51,7 +51,7 @@ public class Dish2UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         //追加
         prevPosition = transform.position;
 
-        Debug.Log("down");
+        //Debug.Log("down");
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -59,7 +59,7 @@ public class Dish2UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         _isPushed = false;
         _nowMousePosi = Vector3.zero;
 
-        Debug.Log("UP");
+        //Debug.Log("UP");
 
         bool flg = true;
         var raycastResults = new List<RaycastResult>();

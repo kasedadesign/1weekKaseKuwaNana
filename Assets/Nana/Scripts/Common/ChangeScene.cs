@@ -17,9 +17,8 @@ public class ChangeScene : MonoBehaviour
 
     public void OnClickNextButton()
     {
-        //TODO:クリアしたシーンを保存
-
-        SceneManager.LoadScene("SelectLevelScene");
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
     }
 
     public void OnClickRetryButton()
