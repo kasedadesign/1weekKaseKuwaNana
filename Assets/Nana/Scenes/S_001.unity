@@ -8779,7 +8779,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
 --- !u!95 &1595173644
 Animator:
   serializedVersion: 3
