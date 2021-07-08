@@ -952,7 +952,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 0
 --- !u!114 &2282918044742171649
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   updateITimeControl: 1
   searchHierarchy: 0
   active: 1
-  postPlayback: 2
+  postPlayback: 0
 --- !u!114 &4539182594318262485
 MonoBehaviour:
   m_ObjectHideFlags: 1
