@@ -1,11 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 
 public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -13,8 +9,6 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector3 _nowMousePosi; // 現在のマウスのワールド座標
 
     private Vector2 prevPosition;
-
-    //private bool oneTime = true; //１回だけ通す
 
     //タイムライン
     [SerializeField] PlayableDirector director;
@@ -88,6 +82,12 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
             if (hit.gameObject == targetObj.gameObject)
             {
+                if (OffTimeLine.notPlayTimeLine)
+                {
+                    transform.position = prevPosition;
+                    return;
+                }
+
                 transform.position = hit.gameObject.transform.position;
                 flg = false;
 
