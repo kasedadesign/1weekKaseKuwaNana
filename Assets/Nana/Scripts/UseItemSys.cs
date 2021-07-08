@@ -14,10 +14,13 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     private Vector2 prevPosition;
 
+    //private bool oneTime = true; //１回だけ通す
+
     //タイムライン
     [SerializeField] PlayableDirector director;
 
-    [SerializeField] GameObject timeLine;
+    //ターゲット
+    [SerializeField] GameObject targetObj;
 
     void Update()
     {
@@ -73,13 +76,23 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
         foreach (var hit in raycastResults)
         {
-            if (hit.gameObject.CompareTag("StoryPoint"))
+            /*if (hit.gameObject.CompareTag("StoryPoint"))
             {
                 transform.position = hit.gameObject.transform.position;
                 flg = false;
 
                 PlayTimeline(hit.gameObject.name);
                 
+                gameObject.SetActive(false);
+            }   */
+
+            if (hit.gameObject == targetObj.gameObject)
+            {
+                transform.position = hit.gameObject.transform.position;
+                flg = false;
+
+                PlayTimeline(hit.gameObject.name);
+
                 gameObject.SetActive(false);
             }
         }
