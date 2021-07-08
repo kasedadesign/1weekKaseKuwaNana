@@ -51,7 +51,7 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         //追加
         prevPosition = transform.position;
 
-        Debug.Log("down");
+        //Debug.Log("down");
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -59,7 +59,7 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         _isPushed = false;
         _nowMousePosi = Vector3.zero;
 
-        Debug.Log("UP");
+        //Debug.Log("UP");
 
         //離したら元の位置に戻る
         //transform.position = prevPosition;
