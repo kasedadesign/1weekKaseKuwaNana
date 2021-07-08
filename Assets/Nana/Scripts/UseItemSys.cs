@@ -17,6 +17,8 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     //タイムライン
     [SerializeField] PlayableDirector director;
 
+    [SerializeField] GameObject timeLine;
+
     void Update()
     {
         Vector3 nowmouseposi;
@@ -89,7 +91,7 @@ public class UseItemSys : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     private void PlayTimeline(string itemName)
     {
-        director.enabled = true;
+        //director.enabled = true;
         director.Play();
     }
 }
