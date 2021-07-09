@@ -17,8 +17,9 @@ public class ChangeScene : MonoBehaviour
 
     public void OnClickNextButton()
     {
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene + 1);
+        //int currentScene = SceneManager.GetActiveScene().buildIndex;
+        //SceneManager.LoadScene(currentScene + 1);
+        SceneManager.LoadScene("SelectLevelScene");
     }
 
     public void OnClickRetryButton()
